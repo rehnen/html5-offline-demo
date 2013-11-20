@@ -1,0 +1,165 @@
+/**
+ * Import base style
+ */
+ @import "../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+
+
+ // form.offline{visibility: hidden;}
+
+
+
+
+ /*NORMAL	*/
+ body{background-color: @greyLight; }
+
+ h1, h2, h3, h4, h4, h6
+ {
+ 	font-family: @font-family-helvetica;
+
+ 	color: white;
+ 	display: inline-block;
+ 	.text-shadow(2px 2px 5px @rehnenDeepBlue);
+ 	/*.box-shadow();*/
+ }
+ header{
+ 	background-color: @rehnenDeepBlue;
+ }
+ a
+ {
+ 	color:white;
+ 	text-decoration: none;
+ 	.text-shadow(2px 2px 5px @rehnenDeepBlue);
+
+
+ 	&:hover
+ 	{
+ 		color:@rehnenDeepBlue;
+ 		.text-shadow(2px 2px 1px #fff);
+ 	}
+ }
+
+ form.offline
+ {
+ 	display: inline;
+ 	width: 500px;
+ 	min-height: 400px;
+ 	background-color: @rehnenDeepBlue;
+ 	padding-bottom: 5px;
+ 	color: #fff;
+ 	float: left;
+ 	.box-shadow(5px 5px 5px 5px darken(@rehnenDeepBlue, 10%));
+ 	label
+ 	{
+ 		font-weight: bold; 
+ 		font-family: @font-family-helvetica; 
+ 		font-size: 18pt;
+ 		margin-left: 5px;
+ 		.text-shadow(2px 2px 2px darken(@rehnenDeepBlue, 10%));
+
+ 	}
+ 	input, textarea
+ 	{
+ 		margin-left: 5px;
+
+ 		font-size: 18pt;
+ 		font-family: @font-family-helvetica;
+ 		width: 490px;
+ 		border: 0;
+ 		padding-left: 0;
+ 		padding-right: 0;
+ 		.box-shadow(0px 0px 2px 2px darken(@rehnenDeepBlue, 10%));
+
+
+ 	}
+ 	textarea{min-height: 200px; resize:vertical; font-size: 12pt;}
+ 	input[type="file"]{box-shadow: none;}
+ 	input[type="submit"]
+ 	{
+ 		.text-shadow(2px 2px 5px darken(@rehnenDeepBlue, 10%));
+ 		&:active
+ 		{
+ 			text-shadow: none;
+ 			box-shadow: none;
+ 		} 		
+ 	}
+ 	
+ }
+
+
+ footer
+ {
+ 	clear: both;
+ 	nav{
+ 		a
+ 		{
+ 			color: #fff;
+ 		}
+ 	}
+ }
+ #flash
+ {
+ 	.box-shadow(5px 5px 20px 10px darken(@rehnenDeepBlue, 10%));
+ }
+ #right
+ {
+
+ 	float: right; 
+ 	width: 380px;
+ 	min-height: 300px;
+ 	.box-shadow(5px 5px 5px 5px darken(@rehnenDeepBlue, 10%));
+ 	.border-radius(0px 0px 15px 0px);
+ 	nav
+ 	{
+ 		width: 100%;
+ 		background-color: @rehnenDeepBlue;
+ 		a
+ 		{
+ 			font-weight: bold;
+ 			padding-left: 5px;
+ 			padding-right: 5px;
+ 			border-left: 2px solid @rehnenDeepBlue;
+ 			border-right: 2px solid @rehnenDeepBlue;
+ 			.text-shadow(2px 2px 2px #000);
+ 			&:hover{
+ 				color: #fff;
+ 				background: @rehnenLightBlue;
+ 				padding-top: 5px;
+ 				border-top: 2px solid @rehnenDeepBlue;
+ 				.border-radius(5px 5px 0px 0px);
+ 				.text-shadow(2px 2px 0px 5px @rehnenDeepBlue);
+ 			}
+ 		}
+ 	}
+ 	table
+ 	{
+ 		th
+ 		{
+ 			color: #000;
+ 			background-color: #fff;
+ 		}
+ 		tr
+ 		{
+ 			border:none;
+ 			&:hover
+ 			{
+ 				color: #fff;
+ 				background-color: @rehnenDeepBlue;
+ 			}
+ 		}
+ 		tr.white
+ 		{
+ 			background-color: #fff;
+ 			&:hover
+ 			{
+ 				color: #fff;
+ 				background-color: @rehnenDeepBlue;
+ 			}
+ 		}
+ 	}
+
+ }
+ /*ID*/
